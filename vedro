@@ -1,0 +1,41 @@
+Command* CommandName(const std::string str) {
+        if (str == "begin") {
+            return new BEGIN();
+        }
+        if (str == "end") {
+            return new END();
+        }
+        if (str == "in") {
+            return new IN();
+        }
+        if (str == "out") {
+            return new OUT();
+        }
+        if (str == "push") {
+            return new PUSH();
+        }
+        if (str == "pop") {
+            return new POP();
+        }
+        if (str == "pushr") {
+            return new PUSHR();
+        }
+        if (str == "popr") {
+            return new POPR();
+        }
+        if (str == "add") {
+            return new ADD();
+        }
+        if (str == "sub") {
+            return new SUB();
+        }
+        if (str == "mul") {
+            return new MUL();
+        }
+        if (str == "div") {
+            return new DIV();
+        }
+        else {
+            return nullptr;
+        }
+    }
